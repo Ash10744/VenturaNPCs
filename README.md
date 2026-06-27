@@ -27,12 +27,7 @@ Citizens is required — VenturaNPCs won't start without it.
 2. Select it — left-click it, or use `/npc select`
 3. Stand where it should be in the morning and run `/vnpc setday`
 4. Stand where it should be at night and run `/vnpc setnight`
-
-That's it. The NPC now walks between those two spots as day turns to night. Want to see it move right away instead of waiting? Run `/vnpc send now`.
-
-You can add as many times as you like, not just day and night — see below.
-
-**Prefer not to type commands?** Run `/vnpc manage` with an NPC selected to open a button menu where you can set, move, and remove times with a click.
+5. Manage the schedule and times easier with `/npc manage`
 
 ---
 
@@ -46,19 +41,15 @@ Stand where you want the NPC to be, then run `/vnpc settime <time>`. You can wri
 
 For example, stand at the market and run `/vnpc settime noon`, and the NPC will head there every day at midday.
 
-An NPC always goes to the most recent time that has passed. So if you set 6am, noon and 8pm, it stays at its 8pm spot all night until 6am comes around again.
-
 ---
 
 ## Editing an NPC
 
-Run `/vnpc list` to see all your scheduled NPCs, then click one to open an editor. From there you can add, move, walk to, or remove times using buttons — no typing required. (You can also open it directly with `/vnpc manage <id>`.)
+Run `/vnpc list` to see all your scheduled NPCs, then click one to open the editor.
 
 ---
 
 ## Commands
-
-All commands start with `/vnpc`.
 
 | Command | What it does |
 |---------|--------------|
