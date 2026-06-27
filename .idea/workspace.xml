@@ -4,20 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c50cf391-f4d5-45bd-9daa-dcf8653d650d" name="Changes" comment="VenturaNPCs - 1.0">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/bov/main/UpdateChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
+    <list default="true" id="c50cf391-f4d5-45bd-9daa-dcf8653d650d" name="Changes" comment="VenturaNPCs - 1.1 - Config and Update notification">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bov/main/Commands/MainCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bov/main/Commands/MainCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bov/main/Libs/Libs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bov/main/Libs/Libs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bov/main/VenturaNPCs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bov/main/VenturaNPCs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VenturaNPCs-1.0-SNAPSHOT-shaded.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VenturaNPCs-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/bov/main/Libs/Libs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/bov/main/Libs/Libs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/bov/main/Commands/MainCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/bov/main/Commands/MainCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/bov/main/VenturaNPCs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/bov/main/VenturaNPCs.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-VenturaNPCs-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782561968317</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="VenturaNPCs - 1.1 - Config and Update notification">
+      <option name="closed" value="true" />
+      <created>1782567286763</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1782567286763</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -135,6 +138,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="VenturaNPCs - 1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="VenturaNPCs - 1.0" />
+    <MESSAGE value="VenturaNPCs - 1.1 - Config and Update notification" />
+    <option name="LAST_COMMIT_MESSAGE" value="VenturaNPCs - 1.1 - Config and Update notification" />
   </component>
 </project>

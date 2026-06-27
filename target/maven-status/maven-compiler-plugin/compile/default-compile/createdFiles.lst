@@ -1,5 +1,6 @@
-net\bov\main\NpcScheduleManager.class
 net\bov\main\Libs\Libs$ChatComponent.class
 net\bov\main\Commands\MainCommand.class
 net\bov\main\Libs\Libs.class
+net\bov\main\NpcScheduleManager.class
+net\bov\main\UpdateChecker.class
 net\bov\main\VenturaNPCs.class
