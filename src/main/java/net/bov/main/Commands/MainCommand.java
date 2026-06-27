@@ -16,6 +16,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
@@ -235,18 +236,18 @@ public class MainCommand implements Listener, CommandExecutor, TabCompleter {
     @Override
     public List<String> onTabComplete(CommandSender sender, Command command, String label, String[] args) {
         if (args.length == 1) {
-            return partial(args[0], List.of("help", "settime", "setday", "setnight", "deltime", "info", "send", "manage", "clear", "list", "prune", "log", "reload"));
+            return partial(args[0], Arrays.asList("help", "settime", "setday", "setnight", "deltime", "info", "send", "manage", "clear", "list", "prune", "log", "reload"));
         }
         if (args.length == 2) {
             String sub = args[0].toLowerCase(Locale.ROOT);
             if (sub.equals("settime") || sub.equals("deltime")) {
-                return partial(args[1], List.of("dawn", "6am", "noon", "12pm", "dusk", "6pm", "8pm", "night", "midnight", "12am"));
+                return partial(args[1], Arrays.asList("dawn", "6am", "noon", "12pm", "dusk", "6pm", "8pm", "night", "midnight", "12am"));
             }
             if (sub.equals("send")) {
-                return partial(args[1], List.of("now", "dawn", "6am", "noon", "12pm", "dusk", "6pm", "8pm", "night", "midnight", "12am"));
+                return partial(args[1], Arrays.asList("now", "dawn", "6am", "noon", "12pm", "dusk", "6pm", "8pm", "night", "midnight", "12am"));
             }
             if (sub.equals("log")) {
-                return partial(args[1], List.of("on", "off"));
+                return partial(args[1], Arrays.asList("on", "off"));
             }
         }
         return new ArrayList<>();

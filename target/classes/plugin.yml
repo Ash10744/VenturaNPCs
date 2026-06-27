@@ -1,7 +1,7 @@
 name: VenturaNPCs
 version: '1.0-SNAPSHOT'
 main: net.bov.main.VenturaNPCs
-api-version: '1.21'
+api-version: '1.16'
 author: Ash10744
 depend: [Citizens]
 
