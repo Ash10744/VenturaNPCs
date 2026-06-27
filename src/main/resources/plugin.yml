@@ -1,0 +1,14 @@
+name: VenturaNPCs
+version: '${project.version}'
+main: net.bov.main.VenturaNPCs
+api-version: '1.21'
+author: Ash10744
+depend: [Citizens]
+
+commands:
+  vnpc:
+    description: Main Command for VenturaNPCs
+    usage: /<command>
+    aliases: [venturanpc, vnpc]
+    permission: venturaNPCs.use
+    permission-message: "&cYou do not have permission to use this command."
