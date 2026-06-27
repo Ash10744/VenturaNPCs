@@ -84,9 +84,7 @@ When an NPC is deleted, its routine is cleaned up automatically.
 
 Need Support, Assistance or Help?
 Join the discord below or submit a report at my github!
-https://discord.gg/rRAXRbaJxz
-OR
-https://github.com/Ash10744/VenturaNPCs/issues
+https://discord.gg/rRAXRbaJxz OR https://github.com/Ash10744/VenturaNPCs/issues
 
 
 ---
