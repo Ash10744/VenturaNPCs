@@ -164,8 +164,12 @@ public class Libs {
         TextComponent msg3 = new TextComponent(format("&f[GitHub] "));
         msg3.setHoverEvent(new HoverEvent(net.md_5.bungee.api.chat.HoverEvent.Action.SHOW_TEXT, new Content[]{new Text(format("&6VenturaNPCs GitHub Page \n\n&7Website URL: \n&6" + this.cmdstarter + "&e&nhttps://github.com/Ash10744/VenturaNPCs"))}));
         msg3.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://github.com/Ash10744/VenturaNPCs"));
+        TextComponent msg4 = new TextComponent(format("&9[Discord] "));
+        msg4.setHoverEvent(new HoverEvent(net.md_5.bungee.api.chat.HoverEvent.Action.SHOW_TEXT, new Content[]{new Text(format("&6VenturaNPCs Discord Support \n\n&7Website URL: \n&6" + this.cmdstarter + "&e&nhttps://discord.gg/9b4dm2GNAm"))}));
+        msg4.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://discord.gg/9b4dm2GNAm"));
         msg.addExtra(msg2);
-        msg2.addExtra(msg3);;
+        msg2.addExtra(msg3);
+        msg3.addExtra(msg4);
         sender.spigot().sendMessage(msg);
     }
 
