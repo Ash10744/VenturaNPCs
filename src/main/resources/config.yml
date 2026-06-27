@@ -1,0 +1,6 @@
+# VenturaNPCs configuration
+
+# Check Spigot for a newer version when the server starts, log the result to
+# the console, and notify admins (players with venturaNPCs.use) when they join.
+# Set this to false to turn off all update checking.
+update-notifications: true

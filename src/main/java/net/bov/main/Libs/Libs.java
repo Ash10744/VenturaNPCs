@@ -155,9 +155,9 @@ public class Libs {
     }
 
     public void PluginInformation(CommandSender sender) {
-        TextComponent msg = new TextComponent(format("&a" + this.cmdstarter + "&b[Wiki] "));
-        msg.setHoverEvent(new HoverEvent(net.md_5.bungee.api.chat.HoverEvent.Action.SHOW_TEXT, new Content[]{new Text(format("&6VenturaNPCs Wiki Page \n\n&7Website URL: \n&6" + this.cmdstarter + "&e&nhttps://bookofventura.net/wiki"))}));
-        msg.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://bookofventura.net/wiki"));
+        TextComponent msg = new TextComponent(format("&a" + this.cmdstarter + "&b[Spigot] "));
+        msg.setHoverEvent(new HoverEvent(net.md_5.bungee.api.chat.HoverEvent.Action.SHOW_TEXT, new Content[]{new Text(format("&6VenturaNPCs Spigot Page \n\n&7Website URL: \n&6" + this.cmdstarter + "&e&nhttps://www.spigotmc.org/resources/venturanpcs-citizens-pathfinding-addon.136543/"))}));
+        msg.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://www.spigotmc.org/resources/venturanpcs-citizens-pathfinding-addon.136543/"));
         TextComponent msg2 = new TextComponent(format("&6[VenturaNPCs] "));
         msg2.setHoverEvent(new HoverEvent(net.md_5.bungee.api.chat.HoverEvent.Action.SHOW_TEXT, new Content[]{new Text(format("&6VenturaNPCs Help Page \n\n&7Click Command: \n&6" + this.cmdstarter + "&e&n/vnpc"))}));
         msg2.setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/vnpc"));

@@ -5,20 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c50cf391-f4d5-45bd-9daa-dcf8653d650d" name="Changes" comment="VenturaNPCs - 1.0">
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/bov/main/UpdateChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VenturaNPCs.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/bov/main/Commands/MainCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bov/main/Commands/MainCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VenturaNPCs-1.0-SNAPSHOT-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/VenturaNPCs-1.0-SNAPSHOT-shaded.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/VenturaNPCs-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/VenturaNPCs-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/bov/main/Commands/MainCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/bov/main/Commands/MainCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/bov/main/Libs/Libs$ChatComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/bov/main/Libs/Libs$ChatComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bov/main/Libs/Libs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bov/main/Libs/Libs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/bov/main/VenturaNPCs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/bov/main/VenturaNPCs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/VenturaNPCs-1.0-SNAPSHOT-shaded.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/VenturaNPCs-1.0-SNAPSHOT.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/net/bov/main/Libs/Libs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/bov/main/Libs/Libs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/bov/main/NpcScheduleManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/bov/main/NpcScheduleManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/bov/main/VenturaNPCs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/bov/main/VenturaNPCs.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-VenturaNPCs-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-VenturaNPCs-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-VenturaNPCs-1.0-SNAPSHOT.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,18 +34,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Ash10744"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Ash10744&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Ash10744/VenturaNPCs.git",
-    "accountId": "d4b06c77-aa19-4108-9bc9-43bfb5a68c4a"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Ash10744/VenturaNPCs.git&quot;,
+    &quot;accountId&quot;: &quot;d4b06c77-aa19-4108-9bc9-43bfb5a68c4a&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -112,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782561055676</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="VenturaNPCs - 1.0">
+      <option name="closed" value="true" />
+      <created>1782561968317</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1782561968317</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

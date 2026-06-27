@@ -1,11 +1,13 @@
 package net.bov.main.Commands;
 
 import net.bov.main.NpcScheduleManager;
+import net.bov.main.UpdateChecker;
 import net.bov.main.VenturaNPCs;
 import net.bov.main.Libs.Libs;
 import net.citizensnpcs.api.CitizensAPI;
 import net.citizensnpcs.api.event.NPCRemoveEvent;
 import net.citizensnpcs.api.npc.NPC;
+import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -14,6 +16,7 @@ import org.bukkit.command.TabCompleter;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerJoinEvent;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -262,6 +265,19 @@ public class MainCommand implements Listener, CommandExecutor, TabCompleter {
             }
         }
         return out;
+    }
+
+    @EventHandler
+    public void onJoin(PlayerJoinEvent event) {
+        final Player player = event.getPlayer();
+        if (!player.hasPermission("venturaNPCs.use")) {
+            return;
+        }
+        final UpdateChecker uc = VenturaNPCs.getInstance().getUpdateChecker();
+        if (uc == null) {
+            return;
+        }
+        Bukkit.getScheduler().runTaskLater(VenturaNPCs.getInstance(), () -> uc.notifyPlayer(player), 40L);
     }
 
     @EventHandler
