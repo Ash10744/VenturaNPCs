@@ -1,3 +1,6 @@
+<img width="800" height="345" alt="image" src="https://github.com/user-attachments/assets/c9fbd36c-a7f7-4889-8510-e8f088e82a04" />
+
+
 # VenturaNPCs
 
 Give your [Citizens](https://www.spigotmc.org/resources/citizens.13811/) NPCs a daily routine. Set where an NPC should be at different times of day, and it walks there on its own as time passes — opening the shop in the morning, heading home at night, wherever you want them.
@@ -73,6 +76,17 @@ Commands act on the NPC you have selected, or you can add its id on the end, for
 NPCs walk using Citizens' pathfinding, so there needs to be a route they can actually walk between their locations. If two spots are cut off from each other — a cliff, a wall, no path — the NPC will simply teleport so it still ends up in the right place. Adding stairs or a clear path between locations keeps them walking instead.
 
 When an NPC is deleted, its routine is cleaned up automatically.
+
+
+---
+<img width="700" height="452" alt="image" src="https://github.com/user-attachments/assets/4e7292f1-8021-42d7-8d94-c75599bef3fe" />
+
+
+Need Support, Assistance or Help?
+Join the discord below or submit a report at my github!
+https://discord.gg/rRAXRbaJxz
+OR
+https://github.com/Ash10744/VenturaNPCs/issues
 
 
 ---
