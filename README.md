@@ -23,11 +23,13 @@ Pathing uses Citizens' own navigator, so movement is dynamic and obeys the world
 
 | Requirement | Version |
 |-------------|---------|
-| Server      | Spigot or Paper 1.21+ |
-| Java        | 21 |
+| Server      | Spigot or Paper 1.16 - latest |
+| Java        | 8 or newer |
 | Citizens    | A build matching your server version |
 
 Citizens is a hard dependency — VenturaNPCs will not enable without it.
+
+VenturaNPCs is built against the 1.16 API and compiled to Java 8 bytecode, which loads on every later server (including Java 21 ones), so a single jar covers the whole range. It only uses stable Bukkit and Citizens API with no version-specific code. The one thing that changes per server version is Citizens itself — install the Citizens build made for your Minecraft version.
 
 ---
 
@@ -46,7 +48,7 @@ Citizens is a hard dependency — VenturaNPCs will not enable without it.
 3. Walk to where it should be at night and run `/vnpc setnight`
 4. Add any extra points you like, e.g. stand at the market and run `/vnpc settime noon`
 
-The NPC now walks between those points as the day cycles. To test instantly without waiting, use `/vnpc send <time>` or the `[Walk Now]` button in `/vnpc manage`.
+The NPC now walks between those points as the day cycles. To test instantly without waiting, use `/vnpc send <time>` or the `[Sync Location]` button in `/vnpc manage`.
 
 Commands act on your selected Citizens NPC (left-click it, or `/npc select`). You can also target one directly by id, e.g. `/vnpc settime 8pm 17`.
 
@@ -93,8 +95,8 @@ Minecraft time runs on a 24,000-tick day where tick 0 is 6:00am, 6000 is noon, 1
 
 `/vnpc manage <id>` (or clicking an NPC in `/vnpc list`) opens an in-chat editor:
 
-- A `[Walk Now]` button that sends the NPC to wherever it should currently be
-- One row per scheduled time showing the location, with `[Go]` (walk there now), `[Set Here]` (move that entry to your position), and `[X]` (delete)
+- A `[Sync Location]` button that sends the NPC to wherever it should currently be
+- One row per scheduled time showing the location, with `[Go]` (walk there now), `[Set Location]` (move that entry to your position), and `[X]` (delete)
 - An add row with quick presets, a `[Custom]` button to type any time, and `[Clear All]`
 - A `[Refresh]` button to redraw the menu after an edit
 
@@ -159,10 +161,23 @@ Stale entries are handled in two ways:
 
 ## Building from source
 
-VenturaNPCs is built with Maven (Java 21).
+VenturaNPCs is built with Maven and compiled to Java 8 bytecode for maximum server compatibility.
 
 ```bash
 mvn clean package
+```
+
+Build with a modern JDK (e.g. JDK 21). The compiler targets Java 8 output, but it still needs to read the Citizens dependency, which ships as newer bytecode — an older JDK 8 toolchain cannot read it. The Java 8 *target* only affects the jar that is produced, which is what makes it load on everything from a 1.16 (Java 8) server to a 1.21 (Java 21) server.
+
+The plugin compiles against the 1.16.5 API so it cannot accidentally use anything newer than 1.16 provides:
+
+```xml
+<dependency>
+    <groupId>org.spigotmc</groupId>
+    <artifactId>spigot-api</artifactId>
+    <version>1.16.5-R0.1-SNAPSHOT</version>
+    <scope>provided</scope>
+</dependency>
 ```
 
 The Citizens dependency is resolved from the Citizens Maven repository and used at `provided` scope (it is never bundled into the jar):
@@ -188,7 +203,7 @@ The Citizens dependency is resolved from the Citizens Maven repository and used 
 </dependency>
 ```
 
-Set the `citizens-main` version to match the Citizens build you run on your server. The compiled jar appears in `target/`.
+Set the `citizens-main` version to one available in the Citizens repository. Only the long-standing Citizens API is used, so the build version does not need to match every server you deploy to — but each server still needs the Citizens build made for its own Minecraft version. The compiled jar appears in `target/`.
 
 ---
 
