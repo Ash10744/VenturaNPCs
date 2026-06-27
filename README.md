@@ -207,12 +207,6 @@ Set the `citizens-main` version to one available in the Citizens repository. Onl
 
 ---
 
-## License
-
-See the LICENSE file in this repository.
-
----
-
 ## Author
 
 Created by Ash10744.
