@@ -1,5 +1,5 @@
 name: VenturaNPCs
-version: '1.4'
+version: '1.5'
 main: net.bov.main.VenturaNPCs
 api-version: '1.16'
 author: Ash10744
